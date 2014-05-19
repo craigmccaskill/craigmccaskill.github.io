@@ -4,7 +4,7 @@ title : GitHub for Mac: Prototype to Persona
 author: Craig McCaskill
 category : 
 ---
-#### Persona to Prototype - see problem, fix problem
+### Persona to Prototype - see problem, fix problem
 
 ## Background
 
