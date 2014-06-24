@@ -3,7 +3,7 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        none
+permalink:        /post/:title.html
 
 # Setup
 title:            Craig McCaskill
