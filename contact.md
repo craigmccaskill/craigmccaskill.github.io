@@ -6,20 +6,20 @@ title: Contact
   <input type='hidden' name='redirect_to' value='http://craigmccaskill.com/contact/?=thank-you' />
     <label>
         <span>Your Name :</span>
-        <input id="name" type="text" name="name" placeholder="Your Full Name" />
+        <input id="name" type="text" name="name" placeholder="Your Name" />
     </label>
     
     <label>
         <span>Your Email :</span>
-        <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+        <input id="email" type="email" name="email" placeholder="Email Address" />
     </label>
     
     <label>
         <span>Message :</span>
-        <textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+        <textarea id="message" name="message" placeholder="Your Message - what's up?"></textarea>
     </label> 
      <label>
         <span>&nbsp;</span> 
         <input class='button red' type='submit' value='Get in touch' /> 
-    </label>   
+    </label> 
 </form>
