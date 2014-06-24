@@ -2,32 +2,12 @@
 layout: page
 title: Work
 ---
+{% for post in site.categories.portfolio %}
 <figure class="portfolio-box">
-  <a href="{% post_url 2014-05-05-github-for-mac-usability-study %}"><img src="http://imgur.com/Y1B748f.jpg" alt="GitHub for Mac"></a>
-  <figcaption><a href="{% post_url 2014-05-05-github-for-mac-usability-study %}">A usability study on GitHub for Mac</a></figcaption>
+  <a href="{{ post.url }}"><img src="/assets/post-imgs/{{ post.img-main }}" alt="{{ post.title }}"></a>
+  <figcaption><a href="{{ post.url }}">{{ post.title }}</a></figcaption>
 </figure>
+{% endfor %}
 
-<figure class="portfolio-box">
-  <a href="{% post_url 2014-05-05-github-for-mac-usability-study %}"><img src="http://imgur.com/Y1B748f.jpg" alt="GitHub for Mac"></a>
-  <figcaption><a href="{% post_url 2014-05-05-github-for-mac-usability-study %}">A usability study on GitHub for Mac</a></figcaption>
-</figure>
 
-<figure class="portfolio-box">
-  <a href="{% post_url 2014-05-05-github-for-mac-usability-study %}"><img src="http://imgur.com/Y1B748f.jpg" alt="GitHub for Mac"></a>
-  <figcaption><a href="{% post_url 2014-05-05-github-for-mac-usability-study %}">A usability study on GitHub for Mac</a></figcaption>
-</figure>
 
-<figure class="portfolio-box">
-  <a href="{% post_url 2014-05-05-github-for-mac-usability-study %}"><img src="http://imgur.com/Y1B748f.jpg" alt="GitHub for Mac"></a>
-  <figcaption><a href="{% post_url 2014-05-05-github-for-mac-usability-study %}">A usability study on GitHub for Mac</a></figcaption>
-</figure>
-
-<figure class="portfolio-box">
-  <a href="{% post_url 2014-05-05-github-for-mac-usability-study %}"><img src="http://imgur.com/Y1B748f.jpg" alt="GitHub for Mac"></a>
-  <figcaption><a href="{% post_url 2014-05-05-github-for-mac-usability-study %}">A usability study on GitHub for Mac</a></figcaption>
-</figure>
-
-<figure class="portfolio-box">
-  <a href="{% post_url 2014-05-05-github-for-mac-usability-study %}"><img src="http://imgur.com/Y1B748f.jpg" alt="GitHub for Mac"></a>
-  <figcaption><a href="{% post_url 2014-05-05-github-for-mac-usability-study %}">A usability study on GitHub for Mac</a></figcaption>
-</figure>

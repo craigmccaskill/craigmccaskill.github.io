@@ -2,7 +2,7 @@
 layout: post
 title: The Elements of User Experience
 author: Craig McCaskill
-category: null
+category: blog
 published: true
 ---
 For anyone looking to get into User Experience, I can't recommend enough that you read Jesse James Garret's book [The Elements of User Experience](http://www.amazon.com/The-Elements-User-Experience-User-Centered/dp/0321683684/ "The Elements of User Experience"). It provides a great framework for thinking about design and gives you a structured rationale and toolkit to deal with just about anything. This is the book you read to find out just how little you actually know about UX, and what those gaps are. Jesse takes the idea that the customer is always right and shows you concisely how to find out how to fulfil your users wants, needs and goals -- even if they don't know them yet.

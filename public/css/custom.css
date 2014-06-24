@@ -129,4 +129,6 @@ Craig's edits to Poole
   float: right;
   font-size: 13px;
   color: white !important;
+  min-width: 100px;
 }
+
