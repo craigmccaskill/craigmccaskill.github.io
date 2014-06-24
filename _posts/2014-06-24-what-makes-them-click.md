@@ -8,7 +8,7 @@ categories:
 published: true
 img-main: what-makes-them-click.png
 ---
-Here are the slides for a short presentation I gave as an introduction to psychology in design. Why it matters and what drives us to make decisions online.
+Here are the slides for a short presentation I gave as an introduction to psychology in design. Why it matters and what drives us to make decisions.
 
 <!-- more -->
 
