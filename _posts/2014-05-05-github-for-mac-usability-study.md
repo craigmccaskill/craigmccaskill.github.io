@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: GitHub for Mac - A usability study
 author: Craig McCaskill
 category: null
@@ -7,6 +7,8 @@ published: true
 ---
 ## Objective
 Usability study on some basic interactions within GitHub for Mac. I love GitHub and decided to take a step back and see if I could find any areas of improvement to the UX of one of their products. 
+
+<!-- more -->
 
 ## Test Parameters
 * What: GitHub for Mac

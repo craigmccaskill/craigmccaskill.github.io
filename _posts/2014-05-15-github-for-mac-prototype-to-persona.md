@@ -1,5 +1,5 @@
 ---
-layout : default
+layout : post
 title : GitHub for Mac - Prototype to Persona
 author: Craig McCaskill
 category : 
@@ -11,6 +11,8 @@ category :
 Building on the work I did previously on my [Usability study on GitHub for Mac]({% post_url 2014-05-05-github-for-mac-usability-study %}), I decided to address the most common problem users were finding with the product. Turns out that usability studies are actually pretty useful!
 
 I also think this is an important problem to address because any time one of your users is using your app for the first time, there’s a good chance it’ll also be the last if they encounter any major issues. With this in mind, I wanted to map out a solution to the first task any user opening GitHub for Mac would want to do: Add a repository.
+
+<!-- more -->
 
 ## The idea
 
