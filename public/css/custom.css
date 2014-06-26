@@ -71,6 +71,7 @@ Craig's edits to Poole
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
   width: 16.795%;
+  min-width: 100px;
   /* auto */
   text-align: center;
   /* DELETE WHEN WIDTH AUTO */
