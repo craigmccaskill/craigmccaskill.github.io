@@ -7,7 +7,7 @@
 
     {% include sidebar.html %}
 
-    <div class="content container">
+    <div class="content container{% if page.title == "Home" %} home-page{% endif %}">
       {{ content }}
     </div>
 

@@ -101,16 +101,30 @@ Craig's edits to Poole
     height: auto;
 }
 
-.sidebar-about h1 {
-  font-size: 1.6rem;
-}
-
 .sidebar-about p {
   font-size: 1.0rem;
 }
 .sidebar-about {
-  padding-left: 1rem;
   margin: 0 auto;
+}
+
+.sidebar-about h1 {
+  color: #fff;
+  margin-top: 0;
+  font-family: "Open-Sans", serif;
+  font-size: 1.6rem;
+}
+
+.sidebar-nav .active:before {
+    content: "\00BB";
+}
+
+.sidebar-nav {
+    margin-left: 1em;
+}
+
+.sidebar-profile p, .sidebar-profile h1 {
+  padding-left: 1rem;
 }
 
 #profile-pic {
@@ -123,7 +137,24 @@ Craig's edits to Poole
   background-image: url(/assets/craigmccaskill.jpg);
   background-position:50% 50%;
   background-repeat:no-repeat;
+  margin: 0 auto;
+}
+
+#profile-pic-large span {
+  display: block;
+  width: 250px;
+  height: 250px;
+  background: #E6E7ED;
+  -moz-border-radius: 125px;
+  -webkit-border-radius: 125px;
+  background-image: url(/assets/craigmccaskill-large.jpg);
+  background-position:50% 50%;
+  background-repeat:no-repeat;
   margin: 0 auto 1em auto;
+}
+
+#profile-pic-large {
+  margin-top: 2em;
 }
 
 .read-more {
@@ -142,7 +173,65 @@ Craig's edits to Poole
   color: #ccc;
 }
 
-.sidebar-nav .active:before {
-    content: "\00BB";
+@media (min-width: 48rem) {
+  .sidebar-small {
+    width: 10rem;
+  }
 }
 
+@media (min-width: 48rem) {
+  .home-page {
+    max-width: 52rem;
+    margin-left: 10rem;
+    margin-right: 2rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 64rem) {
+  .home-page {
+    margin-left: 10rem;
+    margin-right: 2rem;
+    padding: 0;
+  }
+}
+
+.bubble {
+  margin-top: 5em;
+  padding: 0;
+  position: relative;
+  width: 90%;
+  height: 280px;
+  text-align: left;
+  line-height: 100px;
+}
+
+.bubble h1{
+  font-size: 1.75rem;
+}
+
+.bubble h2 {
+  font-size: 1.25rem;
+}
+
+hr.double-line {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    margin: 0 30px;
+}
+
+section#featured-work h2, section#featured-posts h2 {
+  font-size: 1.25em;
+  padding-left: 1rem;
+}
+
+section#featured-work h3, section#featured-posts h3 {
+  font-size: 0.9em;
+}
+
+section#featured-work, section#featured-posts {
+  padding: 1em;
+}

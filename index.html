@@ -2,37 +2,55 @@
 layout: default
 title: Home
 ---
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-    <a href="{{ post.url }}">
-    {{ post.title }}
-    </a>
-    </h1>
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    {% if post.content contains "<!-- more -->" %}
-      {{ post.content | split:"<!-- more -->" | first % }}
-    {% else %}
-      {{ post.content | strip_html | truncatewords:100 }}
-    {% endif %}
-    <a class="read-more button red" href="{{ post.url }}" title="Read more on {{ post.title }}">Read more...</a>
-  </div>
-  {% endfor %}
-</div>
-<div class="pagination">
-  {% if paginator.next_page %}
-  <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-  {% else %}
-  <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-  {% if paginator.page == 2 %}
-  <a class="pagination-item newer" href="/">Newer</a>
-  {% else %}
-  <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-  {% endif %}
-  {% else %}
-  <span class="pagination-item newer">Newer</span>
-  {% endif %}
+<section id="home">
+    <div class="row">
+        <div class="large-4 columns" id="profile-pic-large">
+            <span></span>
+        </div>
+        <div class="large-8 columns" id="bubble-container">
+            <div class="bubble">
+                <hgroup>
+                <h1>Hello! I'm Craig McCaskill.</h1>
+                <h2>UX Designer and Product guy</h2>
+                </hgroup>
+                <p>Need help delighting your users? I'm your guy. I've been working on
+                web products since 2004, both as a consultant and full time as an early member of the team.
+                I love building things, driving user happyness and asking the hard questions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<hr class="double-line">
+<div class="row">
+    <section id="featured-posts" class="large-6 columns">
+        <h2>Featured Posts</h2>
+        <ul class="related-posts">
+            {% for post in site.categories.blog limit:3 %}
+            <li>
+                <h3>
+                <a href="{{ post.url }}">
+                {{ post.title }}
+                <small>{{ post.date | date_to_string }}</small>
+                </a>
+                </h3>
+            </li>
+            {% endfor %}
+        </ul>
+        
+    </section>
+    <section id="featured-work" class="large-6 columns">
+        <h2>Featured Work</h2>
+        <ul class="related-posts">
+            {% for post in site.categories.portfolio limit:3 %}
+            <li>
+                <h3>
+                <a href="{{ post.url }}">
+                {{ post.title }}
+                <small>{{ post.date | date_to_string }}</small>
+                </a>
+                </h3>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
 </div>

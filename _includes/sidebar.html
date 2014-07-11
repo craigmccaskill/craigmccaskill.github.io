@@ -1,29 +1,33 @@
-<div class="sidebar">
-  <a href="/" title="Craig McCaskill" id="profile-pic"></a>
-  <div class="sidebar-about">
-    <h1>{{ site.title }}</h1>
-    <p class="lead">{{ site.description }}</p>
-    <ul class="sidebar-nav">
-      <li class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}">
-        <a href="/">Home</a>
-      </li>
-      <li class="sidebar-nav-item{% if page.title == "Blog" %} active{% endif %}">
-        <a href="/blog.html">Writing</a>
-      </li>
-      <li class="sidebar-nav-item{% if page.title == "Work" %} active{% endif %}">
-        <a href="/portfolio.html">Work</a>
-      </li>
-      <li class="sidebar-nav-item{% if page.title == "Contact" %} active{% endif %}">
-        <a href="/contact.html">Get in touch</a>
-      </li>
-    </ul>
-  </div>
-  <div id="social-bar">
-    <a href="http://www.linkedin.com/in/craigbmccaskill/" title="Craig McCaskill on LinkedIn" rel="me"><i class="fa fa-linkedin-square fa-2x"></i></a>
-    <a href="https://github.com/craigmccaskill" title="Craig McCaskill on GitHub" rel="me"><i class="fa fa-github-square fa-2x"></i></a> 
-    <a href="https://twitter.com/craigmccaskill" title="Craig McCaskill on Twitter" rel="me"><i class="fa fa-twitter-square fa-2x"></i></a>
-    <a href="https://news.ycombinator.com/user?id=craigmccaskill" title="" rel="me"><i class="fa fa-hacker-news fa-2x"></i></a>
-    <a href="https://www.facebook.com/craig.mccaskill.9" title="Craig McCaskill on Facebook" rel="me"><i class="fa fa-facebook-square fa-2x"></i></a>
-    <a href="https://plus.google.com/+CraigMcCaskill/" title="Craig McCaskill on Google+" rel="me"><i class="fa fa-google-plus-square fa-2x"></i></a>  
-  </div>
-</div>
+<section class="sidebar{% if page.title == "Home" %} sidebar-small{% endif %}">
+    <div class="sidebar-about">
+        {% if page.title != "Home" %}
+        <div class="sidebar-profile">
+            <a href="/" title="Craig McCaskill" id="profile-pic"></a>
+            <h1>{{ site.title }}</h1>
+            <p class="lead">{{ site.description }}</p>
+        </div>
+        {% endif %}
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}">
+                <a href="/">Home</a>
+            </li>
+            <li class="sidebar-nav-item{% if page.title == "Blog" %} active{% endif %}">
+                <a href="/blog.html">Writing</a>
+            </li>
+            <li class="sidebar-nav-item{% if page.title == "Work" %} active{% endif %}">
+                <a href="/portfolio.html">Work</a>
+            </li>
+            <li class="sidebar-nav-item{% if page.title == "Contact" %} active{% endif %}">
+                <a href="/contact.html">Get in touch</a>
+            </li>
+        </ul>
+    </div>
+    <div id="social-bar">
+        <a href="http://www.linkedin.com/in/craigbmccaskill/" title="Craig McCaskill on LinkedIn" rel="me"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        <a href="https://github.com/craigmccaskill" title="Craig McCaskill on GitHub" rel="me"><i class="fa fa-github-square fa-2x"></i></a>
+        <a href="https://twitter.com/craigmccaskill" title="Craig McCaskill on Twitter" rel="me"><i class="fa fa-twitter-square fa-2x"></i></a>
+        <a href="https://news.ycombinator.com/user?id=craigmccaskill" title="" rel="me"><i class="fa fa-hacker-news fa-2x"></i></a>
+        <a href="https://www.facebook.com/craig.mccaskill.9" title="Craig McCaskill on Facebook" rel="me"><i class="fa fa-facebook-square fa-2x"></i></a>
+        <a href="https://plus.google.com/+CraigMcCaskill/" title="Craig McCaskill on Google+" rel="me"><i class="fa fa-google-plus-square fa-2x"></i></a>
+    </div>
+</section>
